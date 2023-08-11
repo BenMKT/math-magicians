@@ -1,4 +1,5 @@
 import Calculator from './components/Calculator';
+import DisplayQuote from './components/Quote';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <p>Using React</p>
       </header>
       <Calculator />
+      <DisplayQuote />
     </div>
   );
 }
