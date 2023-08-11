@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
+import '../styles/Quote.css';
 
-// eslint-disable-next-line max-len
-// Create a new component for displaying a quote, Show a loading state if the request is still pending, and Show an error state if the request fails
 function DisplayQuote() {
-  // Create a state variable to hold the quote
-  const [data, setData] = useState([]);
+  const [quote, setQuote] = useState('');
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const category = 'happiness';
-      const apiKey = '3apcodfSda7ISeDOks5vwg==ws9GGvL3Ki7UXpQY';
-      const url = `https://api.api-ninjas.com/v1/quotes?/category=${category}`;
+    const fetchQuote = async () => {
+      const category = 'inspirational';
+      const apiKey = 'i09eDd5A9kESKvq9MMUz4w==dkIr2jqBsavnhYuj';
+      const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+
+      setIsLoading(true);
 
       try {
         const response = await fetch(url, {
@@ -22,42 +22,35 @@ function DisplayQuote() {
             'Content-Type': 'application/json',
           },
         });
-        if (!response.ok) {
-          throw new Error('Error loading quote...');
-        }
-        const jsonData = await response.json();
-        setData(jsonData[0]);
-      } catch (hasError) {
-        setHasError(true);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    fetchData();
-  }, [setData, setIsLoading]);
 
-  if (isLoading) {
-    return (
-      <div className="Quote">
-        <p className="quote">Loading...</p>
-      </div>
-    );
-  }
+        if (!response.ok) {
+          throw new Error('Error loading quote');
+        }
+
+        const data = await response.json();
+        setQuote(data[0].quote);
+      } catch (error) {
+        setHasError(true);
+      }
+
+      setIsLoading(false);
+    };
+
+    fetchQuote();
+  }, []);
 
   if (hasError) {
-    return (
-      <div className="Quote">
-        <p className="quote">Error loading quote...</p>
-      </div>
-    );
+    return <div>Something went wrong...</div>;
   }
 
-  // Return JSX to display the quote
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="Quote">
-      <h1 className="Description">Quote</h1>
-      <p className="quote">{data.quote}</p>
-      <p className="author">{data.author}</p>
+    <div>
+      <h1 className="quote">Quote of the day</h1>
+      <p className="quote">{quote}</p>
     </div>
   );
 }
