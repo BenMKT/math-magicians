@@ -17,7 +17,7 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.calculator input[type='text'] {
+.calcDisplay {
   width: 94.5%;
   height: 30px;
   padding: 10px;
@@ -25,13 +25,8 @@
   background-size: 23px;
   border: none;
   background-color: gray;
-}
-
-.calculator .enter {
   color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
+  text-align: right;
 }
 
 .grid-container {
