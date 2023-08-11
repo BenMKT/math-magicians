@@ -20,7 +20,7 @@ function Calculator() {
   return (
     <main className="calculator">
       <section className="input">
-        <input className="enter" value={displayValue} type="text" readOnly />
+        <input className="calcDisplay" value={displayValue} type="text" readOnly />
       </section>
       <section className="buttons grid-container">
         <button className="grid-item item1" onClick={handleClick} value="AC" type="button">
