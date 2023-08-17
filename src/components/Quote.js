@@ -48,7 +48,7 @@ function DisplayQuote() {
   }
 
   return (
-    <div>
+    <div className="quotes">
       <h1 className="quote">Quote of the day</h1>
       <p className="quote">{quote}</p>
     </div>
