@@ -1,7 +1,7 @@
-<!-- # React-app
+ # Math-Magicians
 <br>
 <div align='center'>
-	<h1> math-magicians: Setup</h1>
+	<h1> React App: Router Setup</h1>
 
   </div>
 <a name="readme-top"></a>
@@ -10,6 +10,7 @@
 
 # 📗 Table of Contents
 
+- [Math-Magicians](#math-magicians)
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Math-Magicians! ](#-math-magicians-)
   - [🛠 Built With ](#-built-with-)
@@ -28,7 +29,7 @@
 
 # 📖 Math-Magicians! <a name="about-project"></a>
 
-**Math-Magicians!** This project is to learn the basics of react, by starting to create the setup.
+**Math-Magicians!** App consists of several pages using the components already created.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>

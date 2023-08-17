@@ -1,25 +1,17 @@
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
 .calculator {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 350px;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 185px;
   border: 1px solid #ccc;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 .calcDisplay {
-  width: 94.5%;
-  height: 30px;
+  width: 100%;
+  height: 50px;
   padding: 10px;
   font-size: 18px;
   background-size: 23px;
@@ -61,4 +53,10 @@
 .item16,
 .item19 {
   background-color: rgb(255, 166, 0);
+}
+
+.calcheader {
+  margin-left: 10%;
+  margin-bottom: -15%;
+  margin-top: 7%;
 }

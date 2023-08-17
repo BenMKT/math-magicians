@@ -1,0 +1,45 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.NavBarContainer {
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  background-color: azure;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20px;
+}
+
+.Navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.Navbar li {
+  list-style: none;
+}
+
+.NavBar a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.NavBar a:hover {
+  color: #333;
+}

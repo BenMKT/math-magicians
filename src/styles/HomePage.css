@@ -1,0 +1,16 @@
+.home {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+h2 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+p {
+  font-size: 18px;
+  padding: 10px;
+}
