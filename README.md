@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-**The live demo will be updated as soon as the page is displayed**
+**Checkout the [Live App](https://benmkt-math-magicians.onrender.com)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
