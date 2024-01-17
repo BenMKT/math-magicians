@@ -6,9 +6,15 @@ const Navbar = () => (
   <div className="NavBarContainer">
     <h1>Math Magicians </h1>
     <nav className="Navbar">
-      <Link to="/">Home</Link>
-      <Link to="/Calculator">Calculator</Link>
-      <Link to="/Quote">Quote</Link>
+      <Link to="/" className="NavBarLinks">
+        Home
+      </Link>
+      <Link to="/Calculator" className="NavBarLinks">
+        Calculator
+      </Link>
+      <Link to="/Quote" className="NavBarLinks">
+        Quote
+      </Link>
     </nav>
   </div>
 );
