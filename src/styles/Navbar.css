@@ -28,18 +28,31 @@ h1 {
   align-items: center;
 }
 
-.Navbar li {
-  list-style: none;
-}
-
-.NavBar a {
+.NavBarLinks {
+  font-size: 17px;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  color: #555;
-  transition: color 0.3s ease;
+  color: #551a8b;
 }
 
-.NavBar a:hover {
-  color: #333;
+.NavBarLinks:hover {
+  color: #00e;
+  font-size: 24px;
+  transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .NavBarContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Navbar {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 3%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
 }
