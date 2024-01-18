@@ -9,3 +9,12 @@
 .quotes {
   margin-top: 15%;
 }
+
+.errormsg {
+  color: rgb(220, 12, 12);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  margin: 6rem 0;
+  text-align: center;
+}

@@ -40,11 +40,11 @@ function DisplayQuote() {
   }, []);
 
   if (hasError) {
-    return <div>Something went wrong...</div>;
+    return <div className="errormsg">Something went wrong...</div>;
   }
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className="errormsg">Loading...</div>;
   }
 
   return (
